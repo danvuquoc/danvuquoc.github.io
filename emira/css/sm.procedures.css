@@ -1,0 +1,265 @@
+body {
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif; 
+	font-size: 14px;
+	line-height:1.4em; 
+	color: #001624; 
+	margin: 15px;
+	margin-left: 30px;
+	border: 0px;
+	padding: 0px;
+	width: 80%;
+	background-color: #ffffff;
+}
+
+
+h1 { margin: 0px;}
+
+
+h2 {
+	line-height: 1.8; 
+	margin-left: 0px; 
+	margin-top: 10px; 
+	margin-bottom: 10px;  
+	font-weight: bold; 
+	font-size: 20px;
+	color: #000000;
+}
+
+
+h3 {
+	line-height: 1.4; 
+	margin-left: -40px; 
+	margin-top: 10px; 
+	margin-bottom: 10px;  
+	font-weight: bold; 
+	font-size: 16px;
+	color: #000000;
+}
+
+h4 {
+	margin-top: 0.8em;
+	margin-bottom:1.2em;
+	color: #000000;
+	font-style: italic;
+}
+
+#topic > h3 {
+	line-height: 1.4; 
+	margin-left: 0px; 
+	margin-top: 10px; 
+	margin-bottom: 10px;  
+	font-weight: bold; 
+	font-size: 16px;
+	color: #000000;
+}
+
+p {
+	margin: 0px;
+	font-weight: light;
+}
+
+.procedure-intro {margin-left:0px;}
+
+.function_group {
+	line-height: 1.4; 
+	margin-left: 0px; 
+	margin-top: 10px; 
+	margin-bottom: 10px;  
+	font-weight: bold; 
+	font-size: 16px;
+	color: #000000;
+}
+
+
+.frtnumber {
+	margin-top: 1pc; 
+	margin-bottom: 0pc; 
+	color: #000006;
+	font-size: 10px;
+}
+
+.srpgraphic {
+	width: 55%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 0.5px solid #7A7977;
+	transition: transform .4s; /* Animation */
+}
+
+.srpgraphic:hover {
+ /* transform: scale(1.30); /* (130% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.frtframe {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align:center;
+	transition: transform .4s; /* Animation */
+}
+
+.frtgraphic {
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.danger {
+	font-weight: bold;
+	line-height:1.4em; 
+	margin-top: 8px; 
+	margin-bottom: 8px;
+	color: #ff0000;
+	}
+	
+.warning {
+	font-weight: bold;
+	line-height:1.4em; 
+	margin-top: 8px; 
+	margin-bottom: 8px;
+	color: #ff8200;
+	}	
+	
+.caution {
+	font-weight: bold;
+	line-height: 1.4em; 
+	margin-top: 8px; 
+	margin-bottom: 8px;
+	}
+	
+.note {
+	line-height: 1.4em; 
+	margin-top: 8px; 
+	margin-bottom: 8px;
+	font-style: italic;
+	}
+	
+.note_topic {
+	line-height: 1; 
+	padding-bottom:1.2em;
+	font-style: italic;
+	}
+	
+.attention {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 1px #000000 solid;
+	border-radius: 8px;
+	padding: 6px 20px 5px 20px;
+}	
+	
+.attentionicon {
+	width:16px;
+	margin-right:5px;
+	vertical-align: top;
+	}
+	
+.frtnumber {	
+	display: none;
+}
+
+.torque {	
+	font-weight: bold;
+	background-color: #F2CC0D;
+}
+
+.eaccess {	
+	font-weight: bold;
+	font-style: italic;
+	padding-top: 1.2em;
+	padding-bottom: 0.8em;
+	color: #000000;
+}
+
+.topic_para {padding-bottom:1.2em;}
+
+.sub-topic_para {padding-bottom:1.2em;}
+
+.bulllist {margin-top:0px;}
+
+.bullitem {padding-bottom:1.0em;}
+
+.tablehead {	
+	font-weight: bold;
+	background-color: #009e73;
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif; 
+	font-size: 12px;
+	line-height:1.4em;
+	color: #ffffff;
+	min-width: 150px;
+	}
+	
+.tablecell {	
+	background-color: #ffffff;
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif; 
+	font-size: 12px;
+	line-height:1.4em;
+	color: #000000;
+	min-width: 150px;
+	}	
+	
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+
+  list-style-type: none;
+  counter-increment: item;
+    padding-bottom: 6px;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.8em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+ol.numlist {margin-top:0px;}
+
+ol > li.numitem{
+list-style-type: decimal;
+}
+
+ol > li.numitem:before {
+  content: none;
+}
+
+#print_button {
+	float: right;
+    height: 20px;
+	width: 60px;
+	border: 1px #000000 solid;
+	border-radius: 4px;
+	padding: 5px;
+    margin-left: 87%;
+	margin-top: -45px;
+    position: fixed;
+z-index: 100;
+}
+
+.print_icon {
+	height: 25px;
+	width: 25px; 
+	background: url(../images/printer.png) 
+	no-repeat; 
+	background-size: contain;
+}
+
+.print_txt {padding-left:25px; color: #000000;}
+
+@media print {
+  #print_button {
+    display: none;
+  }
+}
+
+#topic {padding-bottom: 15px}
+div#sub-topic {padding-bottom:1.2em;}
+
+div#print_button:hover {background-color: rgba(255,242,0, 1); font-weight: bold;}
+
+a:hover {color: #009e73 !important; font-size: 105%; font-weight: 700;}

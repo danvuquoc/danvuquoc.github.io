@@ -1,0 +1,158 @@
+html {	
+	height: 95%;
+}
+
+
+body {
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif; 
+	margin-top:20px;
+	margin-left:12px;
+	margin-right:0px;
+	background-color: #FFF200;
+	height: 100%;
+}
+
+h3 {
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif;
+	color: #000000;
+	font-size: 16px;
+	margin-right: 0px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+h4 {
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif;
+	color: #001624;
+	font-size: 13px;
+	font-weight: light;
+	margin-top: 8px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+
+ul {padding-left: 0px;}
+
+.sub-menu {padding-left: 30px !important;}
+
+a {
+  text-decoration: none;
+}
+
+
+
+#link  {
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif;
+	font-size: 13px;
+	padding-bottom: 2px;
+	list-style-type:circle !important;
+}
+
+li  {
+	font-family: 'Overpass', helvetica, verdana, arial, sans-serif;
+	font-size: 13px;
+	padding-bottom: 2px;
+	list-style: none;
+}
+
+
+#multi-level-navigation {
+  width: 370px;
+}
+
+
+#multi-level-navigation .sub-menu {
+  padding: 0px 10px 0px 16px;
+  display: none;
+  margin-right:1px;
+}
+#multi-level-navigation a {
+  display: block;
+  line-height: 1.4em;
+  padding: 0 16px 0px 4px;
+}
+
+
+
+/* style menu items under h3 which have a submenu  */
+#multi-level-navigation .item-has-submenu > h3 {
+  position: relative;
+  /* this is the right arrow to show that the item has a submenu  */
+}
+#multi-level-navigation .item-has-submenu > h3::after {
+  content: '';
+  display: block;
+  height: 11px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 1em;
+  background: url("../images/cd-arrow.svg") no-repeat center center;
+  background-size: 8px 11px;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+#multi-level-navigation .item-has-submenu > h3.submenu-open::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -o-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+
+
+
+/* style menu items under h4 which have a submenu  */
+#multi-level-navigation .item-has-submenu > h4 {
+  position: relative;
+  /* this is the right arrow to show that the item has a submenu  */
+}
+#multi-level-navigation .item-has-submenu > h4::after {
+  content: '';
+  display: block;
+  height: 11px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0.4em;
+  background: url("../images/cd-arrow.svg") no-repeat center center;
+  background-size: 8px 11px;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+#multi-level-navigation .item-has-submenu > h4.submenu-open::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -o-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+
+a:link {color: #001624;}
+a:visited {color: #001624;}
+a:hover {color: #000000 !important; font-weight: 700; font-size: 110%;}
+a:focus {color: #009e73 !important; font-weight: 700; background-color: rgba(6, 126, 74, 0.5));}
+
